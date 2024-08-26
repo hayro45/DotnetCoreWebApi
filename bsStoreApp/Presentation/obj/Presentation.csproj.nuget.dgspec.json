@@ -123,6 +123,10 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.AspNetCore.MVC.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"

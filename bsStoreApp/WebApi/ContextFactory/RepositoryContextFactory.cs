@@ -17,9 +17,9 @@ namespace WebApi.ContextFactory
             //DbContextOptionsBuilder
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
                 .UseSqlServer(configuration.GetConnectionString("sqlConnection"),
-                prj => prj.MigrationsAssembly("WebApi") );
+                prj => prj.MigrationsAssembly("WebApi"));
 
-            return new RepositoryContext(builder.Options);                  
+            return new RepositoryContext(builder.Options);
         }
     }
 }
