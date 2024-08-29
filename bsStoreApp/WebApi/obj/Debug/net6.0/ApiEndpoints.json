@@ -1,25 +1,36 @@
 [
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "GetAllBooks",
+    "Method": "GetAllBooksAsync",
     "RelativePath": "api/books",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "CreateOneBook",
+    "Method": "CreateOneBookAsync",
     "RelativePath": "api/books",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "book",
-        "Type": "Entities.Models.Book",
+        "Name": "bookDto",
+        "Type": "Entities.DataTransferObjects.BookDtoForInsertion",
         "IsRequired": true
       }
     ],
@@ -27,7 +38,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "GetOneBook",
+    "Method": "GetOneBookAsync",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -43,7 +54,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "UpdateOneBook",
+    "Method": "UpdateOneBookAsync",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -64,7 +75,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "DeleteOneBooks",
+    "Method": "DeleteOneBooksAsync",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -80,7 +91,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.BooksController",
-    "Method": "PartiallyUpdateOneBook",
+    "Method": "PartiallyUpdateOneBookAsync",
     "RelativePath": "api/books/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,

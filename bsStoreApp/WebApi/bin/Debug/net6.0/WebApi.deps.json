@@ -10,7 +10,6 @@
         "dependencies": {
           "Entities": "1.0.0",
           "Microsoft.AspNetCore.JsonPatch": "6.0.10",
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
@@ -1006,6 +1005,7 @@
       "Presentation/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "6.0.10",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Services": "1.0.0"
         },
