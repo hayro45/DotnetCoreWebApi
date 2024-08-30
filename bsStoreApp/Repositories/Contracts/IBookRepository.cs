@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Contracts
 {
-    public interface IBookRepository : IRepositoryBase<Book>
+    public interface IQueryable : IRepositoryBase<Book>
     {
         Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters,
             bool trackChanges);

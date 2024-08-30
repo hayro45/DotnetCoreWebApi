@@ -20,5 +20,11 @@ namespace Entities.RequesFeatures
             get { return _pageSize; }
             set { _pageSize = (value > MaxPageSize) ? MaxPageSize : value; }
         }
+
+        public String? OrderBy { get; set; }
+        protected RequesParameters()
+        {
+            OrderBy = "Id";
+        }
     }
 }

@@ -8,6 +8,26 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "MinPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ValidPriceRange",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "PageNumber",
         "Type": "System.Int32",
         "IsRequired": false
@@ -15,6 +35,11 @@
       {
         "Name": "PageSize",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderBy",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lH0Ki6buuRo=",
+  "dgSpecHash": "iM+QKnmXHLg=",
   "success": true,
   "projectFilePath": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\hayre\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.linq.dynamic.core\\1.4.5\\system.linq.dynamic.core.1.4.5.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

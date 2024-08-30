@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vz9gCU+gtMI=",
+  "dgSpecHash": "xzp8QdLxQqs=",
   "success": true,
   "projectFilePath": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,7 @@
     "C:\\Users\\hayre\\.nuget\\packages\\system.io.filesystem\\4.0.1\\system.io.filesystem.4.0.1.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.linq.dynamic.core\\1.4.5\\system.linq.dynamic.core.1.4.5.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",

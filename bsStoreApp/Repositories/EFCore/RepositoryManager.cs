@@ -10,15 +10,15 @@ namespace Repositories.EFCore
     public class RepositoryManager : IRepositoryManager
     {
         public RepositoryContext _context;
-        private readonly Lazy<IBookRepository> _bookRepository;
+        private readonly Lazy<Contracts.IQueryable> _bookRepository;
 
         public RepositoryManager(RepositoryContext context)
         {
             _context = context;
-            _bookRepository = new Lazy<IBookRepository> (()=>new BookRepository(_context));
+            _bookRepository = new Lazy<Contracts.IQueryable>(()=>new BookRepository(_context));
         }
 
-        public IBookRepository Book => _bookRepository.Value;
+        public Contracts.IQueryable Book => _bookRepository.Value;
 
         public async Task SaveAsync()
         {

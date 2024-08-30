@@ -83,3 +83,4 @@ C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.dll
 C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.Extensions.Logging.dll
 C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll

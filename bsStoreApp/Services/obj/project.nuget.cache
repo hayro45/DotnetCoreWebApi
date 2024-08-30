@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VVOgVoHGlmE=",
+  "dgSpecHash": "70khZGaw+10=",
   "success": true,
   "projectFilePath": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\hayre\\.nuget\\packages\\nlog.extensions.logging\\5.3.12\\nlog.extensions.logging.5.3.12.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.linq.dynamic.core\\1.4.5\\system.linq.dynamic.core.1.4.5.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
