@@ -26,5 +26,7 @@ namespace Entities.RequesFeatures
         {
             OrderBy = "Id";
         }
+
+        public String? Fields { get; set; }  
     }
 }
