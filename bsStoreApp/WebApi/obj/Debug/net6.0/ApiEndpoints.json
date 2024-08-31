@@ -134,7 +134,7 @@
       },
       {
         "Name": "bookPatch",
-        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "Type": "Microsoft.AspNetCore.JsonPatch.JsonPatchDocument\u00601[[Entities.DataTransferObjects.BookDtoForUpdate, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],

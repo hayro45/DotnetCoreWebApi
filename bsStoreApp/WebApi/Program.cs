@@ -16,10 +16,10 @@ builder.Services.AddControllers(config =>
     config.RespectBrowserAcceptHeader = true;
     config.ReturnHttpNotAcceptable = true;
 })
-.AddCustomCSVFormatter()
 .AddXmlDataContractSerializerFormatters()
-.AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly)
-.AddNewtonsoftJson();
+.AddCustomCSVFormatter()
+.AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly);
+//.AddNewtonsoftJson();
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
@@ -38,6 +38,8 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureActionFilters();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureDataShaper();
+builder.Services.AddCustomMediaTypes();
+builder.Services.AddScoped<IBookLinks, BookLinks>();
 
 var app = builder.Build();
 
