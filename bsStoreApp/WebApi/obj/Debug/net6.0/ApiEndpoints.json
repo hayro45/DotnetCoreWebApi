@@ -1,9 +1,78 @@
 [
   {
+    "ContainingType": "Presentation.Controllers.RootController",
+    "Method": "GetRoot",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Accept",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetRoot"
+  },
+  {
     "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetAllBooksAsync",
     "RelativePath": "api/books",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MinPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ValidPriceRange",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fields",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllBooksAsync"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetAllBooksAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "HEAD",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -64,6 +133,17 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateOneBookAsync"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetBooksOptions",
+    "RelativePath": "api/books",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
