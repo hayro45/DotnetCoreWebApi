@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\presentation\\controllers\\rootcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\rootcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\presentation\\controllers\\booksv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\booksv2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\presentation\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\webapi\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|solutionrelative:webapi\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RootController.cs",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\RootController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\RootController.cs",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\RootController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\RootController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwCsAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ServicesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\Extensions\\ServicesExtensions.cs",
+              "RelativeDocumentMoniker": "WebApi\\Extensions\\ServicesExtensions.cs",
+              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\Extensions\\ServicesExtensions.cs",
+              "RelativeToolTip": "WebApi\\Extensions\\ServicesExtensions.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAFIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T10:55:50.586Z",
+              "WhenOpened": "2024-09-02T22:25:42.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:25:35.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksV2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\BooksV2Controller.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\BooksV2Controller.cs",
+              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\BooksV2Controller.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\BooksV2Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:23:07.768Z",
               "EditorCaption": ""
             }
           ]

@@ -8,7 +8,7 @@ namespace Repositories.Contracts
 {
     public interface IRepositoryManager
     {
-        IQueryable Book { get; }
+        IBookRepository Book { get; }
         Task SaveAsync();
     }
 }

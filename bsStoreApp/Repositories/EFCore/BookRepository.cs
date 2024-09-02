@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.EFCore
 {
-    public sealed class BookRepository : RepositoryBase<Book>, Contracts.IQueryable
+    public sealed class BookRepository : RepositoryBase<Book>, IBookRepository
     {
         public BookRepository(RepositoryContext context) : base(context)
         {
@@ -44,6 +44,9 @@ namespace Repositories.EFCore
 
         public void DeleteOneBook(Book book) => Delete(book);
 
-
+        public async Task<List<Book>> GetAllBooksAsync(bool trackChanges)
+        {
+            return await FindAll(trackChanges).OrderBy(b => b.Id).ToListAsync();
+        }
     }
 }

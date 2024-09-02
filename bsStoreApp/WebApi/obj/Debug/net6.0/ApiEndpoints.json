@@ -147,6 +147,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.BooksV2Controller",
+    "Method": "GetAllBooksAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetOneBookAsync",
     "RelativePath": "api/books/{id}",

@@ -29,7 +29,6 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
@@ -40,6 +39,7 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureDataShaper();
 builder.Services.AddCustomMediaTypes();
 builder.Services.AddScoped<IBookLinks, BookLinks>();
+builder.Services.ConfigureVersioning();
 
 var app = builder.Build();
 
