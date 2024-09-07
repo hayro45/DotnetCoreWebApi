@@ -17,6 +17,22 @@
     "EndpointName": "GetRoot"
   },
   {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForRegistrationDto",
+        "Type": "Entities.DataTransferObjects.UserForRegistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetAllBooksAsync",
     "RelativePath": "api/books",
@@ -141,16 +157,6 @@
     "Method": "GetBooksOptions",
     "RelativePath": "api/books",
     "HttpMethod": "OPTIONS",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Presentation.Controllers.BooksV2Controller",
-    "Method": "GetAllBooksAsync",
-    "RelativePath": "api/books",
-    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

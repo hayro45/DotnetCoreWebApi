@@ -15,7 +15,7 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public async Task<IActionResult> GetAllBooksAsync()
         {
             var books = await _manager.BookService.GetAllBooksAsync(false);
@@ -25,6 +25,6 @@ namespace Presentation.Controllers
                 Id = b.Id,
             });
             return Ok(booksV2);
-        }
+        }*/
     }
 }
