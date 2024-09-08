@@ -33,6 +33,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "Authenticate",
+    "RelativePath": "api/authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForAuthenticationDto",
+        "Type": "Entities.DataTransferObjects.UserForAuthenticationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetAllBooksAsync",
     "RelativePath": "api/books",

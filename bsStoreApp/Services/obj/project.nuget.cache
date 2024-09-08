@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OBteDenlr88=",
+  "dgSpecHash": "3+4unYK6RSs=",
   "success": true,
   "projectFilePath": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -29,15 +29,26 @@
     "C:\\Users\\hayre\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.34.0\\microsoft.identitymodel.abstractions.6.34.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.34.0\\microsoft.identitymodel.jsonwebtokens.6.34.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\microsoft.identitymodel.logging\\6.34.0\\microsoft.identitymodel.logging.6.34.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.34.0\\microsoft.identitymodel.tokens.6.34.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\nlog.extensions.logging\\5.3.12\\nlog.extensions.logging.5.3.12.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.34.0\\system.identitymodel.tokens.jwt.6.34.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.linq.dynamic.core\\1.4.5\\system.linq.dynamic.core.1.4.5.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\hayre\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\hayre\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+    "C:\\Users\\hayre\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\hayre\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }

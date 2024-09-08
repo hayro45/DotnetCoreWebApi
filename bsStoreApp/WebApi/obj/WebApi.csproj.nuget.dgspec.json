@@ -310,6 +310,10 @@
               "target": "Package",
               "version": "[5.3.12, )"
             },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.34.0, )"
+            },
             "automapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"

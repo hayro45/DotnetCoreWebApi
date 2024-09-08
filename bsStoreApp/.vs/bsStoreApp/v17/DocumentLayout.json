@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{251851DC-1247-4E56-AD9B-7720186C9CEC}|Services\\Services.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\services\\authenticationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{251851DC-1247-4E56-AD9B-7720186C9CEC}|Services\\Services.csproj|solutionrelative:services\\authenticationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{251851DC-1247-4E56-AD9B-7720186C9CEC}|Services\\Services.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\services\\contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{251851DC-1247-4E56-AD9B-7720186C9CEC}|Services\\Services.csproj|solutionrelative:services\\contracts\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91024CCE-A1B3-4AB2-B0A4-C9C6EA71144A}|Entities\\Entities.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\entities\\datatransferobjects\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91024CCE-A1B3-4AB2-B0A4-C9C6EA71144A}|Entities\\Entities.csproj|solutionrelative:entities\\datatransferobjects\\userforauthenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\presentation\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23030B70-664D-4145-8813-C4F63FCBE3E6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|c:\\users\\hayre\\source\\repos\\bsstoreapp\\webapi\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F25BCE19-3638-4099-9D84-4D598AFD3D92}|WebApi\\WebApi.csproj|solutionrelative:webapi\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,87 +27,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthenticationManager.cs",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Services\\AuthenticationManager.cs",
-              "RelativeDocumentMoniker": "Services\\AuthenticationManager.cs",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Services\\AuthenticationManager.cs",
-              "RelativeToolTip": "Services\\AuthenticationManager.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T12:40:49.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Services\\Contracts\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "Services\\Contracts\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Services\\Contracts\\IAuthenticationService.cs",
-              "RelativeToolTip": "Services\\Contracts\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T12:40:16.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserForAuthenticationDto.cs",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Entities\\DataTransferObjects\\UserForAuthenticationDto.cs",
-              "RelativeDocumentMoniker": "Entities\\DataTransferObjects\\UserForAuthenticationDto.cs",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Entities\\DataTransferObjects\\UserForAuthenticationDto.cs",
-              "RelativeToolTip": "Entities\\DataTransferObjects\\UserForAuthenticationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T12:37:58.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "BooksController.cs",
               "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\BooksController.cs",
               "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\Presentation\\Controllers\\BooksController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwB8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAD4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T12:13:08.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\Program.cs",
-              "RelativeToolTip": "WebApi\\Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwDAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T12:03:39.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\appsettings.json",
-              "RelativeToolTip": "WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-06T12:01:07.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServicesExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\Extensions\\ServicesExtensions.cs",
-              "RelativeDocumentMoniker": "WebApi\\Extensions\\ServicesExtensions.cs",
-              "ToolTip": "C:\\Users\\hayre\\source\\repos\\bsStoreApp\\WebApi\\Extensions\\ServicesExtensions.cs",
-              "RelativeToolTip": "WebApi\\Extensions\\ServicesExtensions.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T08:12:14.4Z"
+              "WhenOpened": "2024-09-08T12:48:37.441Z",
+              "EditorCaption": ""
             }
           ]
         }

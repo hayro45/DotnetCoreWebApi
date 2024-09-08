@@ -25,6 +25,7 @@ namespace Presentation.Controllers
             _manager = manager; 
         }
 
+        [Authorize(Roles = "User")]
         [Authorize]
         [HttpHead]
         [HttpGet(Name ="GetAllBooksAsync")]
@@ -49,6 +50,7 @@ namespace Presentation.Controllers
                 Ok(result.linkResponse.ShapedEntities); //200
         }
 
+        [Authorize(Roles = "Editor")]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneBookAsync([FromRoute(Name = "id")] int id)
         {
@@ -57,6 +59,8 @@ namespace Presentation.Controllers
             return Ok(book); //200
         }
 
+
+        [Authorize(Roles="Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateOneBookAsync")]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
@@ -66,7 +70,7 @@ namespace Presentation.Controllers
         }
 
 
-        
+
         [ServiceFilter(typeof(ValidationFilterAttribute), Order =1)]
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, 
@@ -77,12 +81,14 @@ namespace Presentation.Controllers
             return NoContent(); //204
         }
 
+
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteOneBooksAsync([FromRoute(Name = "id")] int id)
         {
             await _manager.BookService.DeleteOneBookAsync(id, false);
             return NoContent(); //204
         }
+
 
         [HttpPatch("{id:int}")]
         public async  Task<IActionResult> PartiallyUpdateOneBookAsync([FromRoute(Name = "id")] int id,
@@ -104,6 +110,7 @@ namespace Presentation.Controllers
 
             return NoContent(); //204
         }
+
 
         [HttpOptions]
         public IActionResult GetBooksOptions()

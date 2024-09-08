@@ -88,3 +88,5 @@ C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetC
 C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\Marvin.Cache.Headers.dll
 C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\AspNetCoreRateLimit.dll
 C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\hayre\source\repos\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

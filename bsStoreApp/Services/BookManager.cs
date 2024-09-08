@@ -34,6 +34,7 @@ namespace Services
             _bookLinks = bookLinks;
         }
 
+
         public async Task<(LinkResponse linkResponse, MetaData metaData)> GetAllBooksAsync(LinkParameters linkParameters, bool trackChanges)
         {
             if (!linkParameters.BookParameters.ValidPriceRange)
