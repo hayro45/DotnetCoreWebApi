@@ -49,6 +49,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "Refresh",
+    "RelativePath": "api/authentication/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenDto",
+        "Type": "Entities.DataTransferObjects.TokenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.BooksController",
     "Method": "GetAllBooksAsync",
     "RelativePath": "api/books",
@@ -173,6 +189,16 @@
     "Method": "GetBooksOptions",
     "RelativePath": "api/books",
     "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksV2Controller",
+    "Method": "GetAllBooksAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

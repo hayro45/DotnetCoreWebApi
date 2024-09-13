@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Presentation.ActionFilters;
 using Presentation.Controllers;
 using Repositories.Contracts;
@@ -28,22 +29,22 @@ namespace WebApi.Extensions
             );
         }
 
-        public static void ConfigureRepositoryManager(this IServiceCollection services) => 
-            services.AddScoped<IRepositoryManager, RepositoryManager> ();
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
 
         public static void ConfigureServiceManager(this IServiceCollection services) =>
             services.AddScoped<IServiceManager, ServiceManager>();
 
         public static void ConfigureLoggerService(this IServiceCollection services) =>
             services.AddSingleton<ILoggerService, LoggerManager>();
-        
+
         public static void ConfigureActionFilters(this IServiceCollection services)
         {
             services.AddScoped<ValidationFilterAttribute>();
             services.AddSingleton<LogFilterAttribute>();
             services.AddScoped<ValidateMediaTypeAttribute>();
         }
-        
+
         public static void ConfigureCors(this IServiceCollection services) =>
             services.AddCors(options =>
             {
@@ -53,10 +54,10 @@ namespace WebApi.Extensions
                         .AllowAnyHeader()
                         .WithExposedHeaders("X-Pagination"));
             });
-    
+
         public static void ConfigureDataShaper(this IServiceCollection services) =>
             services.AddScoped<IDataShaper<BookDto>, DataShaper<BookDto>>();
-    
+
         public static void AddCustomMediaTypes(this IServiceCollection services) =>
             services.Configure<MvcOptions>(config =>
             {
@@ -69,7 +70,7 @@ namespace WebApi.Extensions
                     systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.codemaze.hateoas+json");
                     systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.codemaze.apiroot+json");
                 }
-                
+
                 var xmlOutputFormatter = config.OutputFormatters
                     .OfType<XmlDataContractSerializerOutputFormatter>()?
                     .FirstOrDefault();
@@ -80,7 +81,7 @@ namespace WebApi.Extensions
 
                 }
             });
-   
+
         public static void ConfigureVersioning(this IServiceCollection services)
         {
             services.AddApiVersioning(opt =>
@@ -94,7 +95,7 @@ namespace WebApi.Extensions
                 opt.Conventions.Controller<BooksV2Controller>().HasApiVersion(new ApiVersion(2, 0));
             });
         }
-    
+
         public static void ConfigureResponseCaching(this IServiceCollection services) =>
             services.AddResponseCaching();
 
@@ -144,7 +145,7 @@ namespace WebApi.Extensions
                 q.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<RepositoryContext>()
               .AddDefaultTokenProviders();
-            
+
         }
 
         public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)
@@ -157,7 +158,7 @@ namespace WebApi.Extensions
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 
-            }).AddJwtBearer(options => 
+            }).AddJwtBearer(options =>
 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -170,8 +171,56 @@ namespace WebApi.Extensions
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
                 }
 
-            ) ;
+            );
         }
 
+
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1", 
+
+                    new OpenApiInfo
+                    {
+                        Title = "Book API",
+                        Version = "v1",
+                        Description = "Book api Asp.Net Core Wep Api",
+                        TermsOfService = new Uri("https://www.hayrettindal.com"),
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Hayrettin Dal",
+                            Email = "hayretindal@gmail.com",
+                            Url = new Uri("https://www.hayrettindal.com")
+                        }
+                    }
+                );
+                s.SwaggerDoc("v2", new OpenApiInfo { Title = "Book API", Version = "v2" });
+
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Please enter into field the word 'Bearer' following by space and JWT",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                s.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            },
+                            Name = "Bearer"
+                        },
+                        new List<string>()
+                    }
+                });
+            });
+        }
     }
 }

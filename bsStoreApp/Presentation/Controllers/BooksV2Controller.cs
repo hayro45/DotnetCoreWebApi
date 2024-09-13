@@ -6,6 +6,7 @@ namespace Presentation.Controllers
     //[ApiVersion("2.0", Deprecated = true)]
     [ApiController]
     [Route("api/books")]
+    [ApiExplorerSettings(GroupName = "v2")]
     public class BooksV2Controller: ControllerBase
     {
         private readonly IServiceManager _manager;
@@ -15,7 +16,7 @@ namespace Presentation.Controllers
             _manager = manager;
         }
 
-        /*[HttpGet]
+        [HttpGet]
         public async Task<IActionResult> GetAllBooksAsync()
         {
             var books = await _manager.BookService.GetAllBooksAsync(false);
@@ -25,6 +26,6 @@ namespace Presentation.Controllers
                 Id = b.Id,
             });
             return Ok(booksV2);
-        }*/
+        }
     }
 }
