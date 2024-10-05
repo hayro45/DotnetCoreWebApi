@@ -6,17 +6,13 @@ using Entities.Models;
 using Entities.RequesFeatures;
 using Repositories.Contracts;
 using Services.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Services
 {
     public class BookManager : IBookService
     {
+        private readonly ICategoryService _categoryService;
         private readonly IRepositoryManager _manager;
         private readonly ILoggerService _logger;
         private readonly IMapper _mapper;
@@ -26,12 +22,14 @@ namespace Services
         public BookManager(IRepositoryManager manager, 
             ILoggerService logger, 
             IMapper mapper,  
-            IBookLinks bookLinks)
+            IBookLinks bookLinks,
+            ICategoryService categoryService)
         {
             _manager = manager;
             _logger = logger;
             _mapper = mapper;
             _bookLinks = bookLinks;
+            _categoryService = categoryService;
         }
 
 
@@ -55,7 +53,11 @@ namespace Services
 
         public async Task<BookDto> CreateOneBookAsync(BookDtoForInsertion bookDto)
         {
+            var category = await _categoryService.GetOneCategoryByIdAsync(bookDto.CategoryId, false);
+
             var entity = _mapper.Map<Book>(bookDto);
+            entity.CategoryId = bookDto.CategoryId;
+
             _manager.Book.CreateOneBook(entity);
             await _manager.SaveAsync();
             return _mapper.Map<BookDto>(entity);
@@ -117,6 +119,11 @@ namespace Services
             var books = await _manager.Book.GetAllBooksAsync(trackChanges);
             return books;
 
+        }
+
+        public async Task<IEnumerable<Book>> GetAllBooksWithDetailsAsync(bool trackChanges)
+        {
+            return await _manager.Book.GetAllBooksWithDetailsAsync(trackChanges);
         }
     }
 }
