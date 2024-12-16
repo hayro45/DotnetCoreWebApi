@@ -1,18 +1,18 @@
 # bsStoreApp
 
-`bsStoreApp` is a backend project developed using **ASP.NET Core Web API** and **PostgreSQL**, intended for managing store-related functionalities. This document provides an overview of the project, its features, and how to set it up.
+`bsStoreApp` is a backend project developed using **ASP.NET Core Web API** and **SQL Server**, intended for managing store-related functionalities. This document provides an overview of the project, its features, and how to set it up.
 
 ## Features
 
 - **Layered Architecture**: Ensures separation of concerns with a clean and maintainable codebase.
 - **RESTful API Endpoints**: CRUD operations for managing entities related to a store application.
-- **PostgreSQL Integration**: Uses PostgreSQL as the database management system.
+- **SQL Server Integration**: Uses SQL Server as the database management system.
 - **Configuration-Driven**: Easily customizable using environment variables and configuration files.
 
 ## Technologies Used
 
 - **.NET Core**: For building the backend Web API.
-- **PostgreSQL**: As the database.
+- **SQL Server**: As the database.
 - **Entity Framework Core**: For object-relational mapping (ORM).
 - **Swagger**: For API documentation and testing.
 - **Logging**: Implemented using NLog for efficient tracking and debugging.
@@ -34,7 +34,7 @@
 Ensure the following are installed on your system:
 
 - [.NET Core SDK](https://dotnet.microsoft.com/download)
-- [PostgreSQL](https://www.postgresql.org/download/)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - A REST client like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
 
 ## Installation
@@ -46,11 +46,11 @@ Ensure the following are installed on your system:
    ```
 
 2. Configure the database:
-   - Create a PostgreSQL database.
-   - Update the `appsettings.json` file with your PostgreSQL connection string:
+   - Create a SQL Server database.
+   - Update the `appsettings.json` file with your SQL Server connection string:
      ```json
      "ConnectionStrings": {
-         "DefaultConnection": "Host=localhost;Database=YourDatabase;Username=YourUsername;Password=YourPassword"
+         "DefaultConnection": "Server=YourServerName;Database=YourDatabase;User Id=YourUsername;Password=YourPassword;"
      }
      ```
 
@@ -86,15 +86,41 @@ Use a REST client like Postman or curl to interact with the API. Example request
 
 ```
 bsStoreApp/
-├── Controllers/       # API Controllers
-├── Data/              # Database context and migrations
-├── Models/            # Entity models
-├── Services/          # Business logic
-├── appsettings.json   # Configuration file
-├── Filters/           # Action filters for request handling
-├── Mappings/          # AutoMapper profiles
-├── Middlewares/       # Custom middleware implementations
-└── Program.cs         # Entry point
+├── Entities/            # Data models and DTOs
+├── ErrorModel/          # Error handling models
+├── Exceptions/          # Custom exceptions
+├── LinkModels/          # HATEOAS link management
+├── LogModel/            # Logging-related models
+├── Models/              # Additional entity models
+├── RequestFeatures/     # Pagination, filtering, and sorting utilities
+├── Presentation/
+│   ├── ActionFilters/   # Request/response action filters
+│   ├── Controllers/     # API controllers
+│   └── Presentation.csproj
+├── Repositories/
+│   ├── Contracts/       # Repository interfaces
+│   ├── EFCore/          # Entity Framework Core implementations
+│   └── Repositories.csproj
+├── Services/
+│   ├── AuthenticationManager.cs # JWT and identity management
+│   ├── BookLinks.cs             # Link generation for books
+│   ├── BookManager.cs           # Business logic for books
+│   ├── CategoryManager.cs       # Business logic for categories
+│   ├── DataShaper.cs            # Dynamic data shaping
+│   ├── LoggerManager.cs         # Logging manager
+│   ├── ServiceManager.cs        # Service orchestration
+│   └── Services.csproj
+├── WebApi/
+│   ├── ContextFactory/   # Database context factory
+│   ├── Extensions/       # Extension methods
+│   ├── Migrations/       # Database migrations
+│   ├── Properties/       # Assembly properties
+│   ├── Utilities/        # Utility classes
+│   ├── Program.cs        # Entry point
+│   ├── appsettings.json  # Configuration file
+│   ├── nLog.config       # NLog configuration
+│   └── WebApi.csproj
+└── bin/Debug/net6.0/     # Build output
 ```
 
 ## Contributing
